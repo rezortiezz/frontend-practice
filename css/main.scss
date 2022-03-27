@@ -89,10 +89,12 @@ body {
         .grades {
             display: flex;
             position: relative;
-            margin-top: .5em;
+            margin-top: 0;
+            padding: 6px;
             
             .grade1, .grade2, .grade3, .grade4, .grade5 {
                 
+                padding: 2px;
                 margin: auto;
                 margin-top: .4em;
                 margin-bottom: .4em;

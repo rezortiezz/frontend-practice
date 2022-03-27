@@ -97,10 +97,12 @@ body .shape .grades {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-top: .5em;
+  margin-top: 0;
+  padding: 6px;
 }
 
 body .shape .grades .grade1, body .shape .grades .grade2, body .shape .grades .grade3, body .shape .grades .grade4, body .shape .grades .grade5 {
+  padding: 2px;
   margin: auto;
   margin-top: .4em;
   margin-bottom: .4em;
