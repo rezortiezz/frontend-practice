@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   background-color: #121417;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -130,6 +131,45 @@ body .shape .grades .grade1:focus, body .shape .grades .grade2:focus, body .shap
 
 body a {
   text-decoration: none;
+}
+
+#defaultContent {
+  display: block;
+  opacity: 1;
+}
+
+#additionalContent {
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#additionalContent .phoneImage {
+  margin-top: 3em;
+}
+
+#additionalContent #gradeOverview {
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+  background-color: #121c21;
+  border-radius: 15px;
+  font-size: .8rem;
+  padding: .4em;
+  width: 160px;
+  color: rgba(238, 163, 109, 0.904);
+}
+
+#additionalContent .thankYou {
+  font-size: 1.9rem;
+  margin-top: 0.1em;
+}
+
+#additionalContent .thankYouP {
+  margin: 0;
+  font-size: 14px;
 }
 
 ::-moz-selection {

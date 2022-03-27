@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background-color: hsl(216, 12%, 8%);
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -123,6 +124,45 @@ body {
 
     a {
         text-decoration: none;
+    }
+
+}
+
+#defaultContent {
+    display: block;
+    opacity: 1;
+}
+
+#additionalContent {
+    transition: opacity 1s ease-out;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    .phoneImage {
+        margin-top: 3em;
+    }
+
+    #gradeOverview {
+        text-align: center;
+        margin: auto;
+        margin-top: 1em;
+        background-color: hsl(199, 31%, 10%);
+        border-radius: 15px;
+        font-size: .8rem;
+        padding: .4em;
+        width: 160px;
+        color: hsla(25, 79%, 68%, 0.904);
+        
+    }
+    .thankYou {
+        font-size: 1.9rem;
+        margin-top: 0.1em;
+    }
+    
+    .thankYouP {
+        margin: 0;
+        font-size: 14px;
     }
 
 }
