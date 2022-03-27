@@ -104,16 +104,15 @@ body .shape .grades {
 body .shape .grades .grade1, body .shape .grades .grade2, body .shape .grades .grade3, body .shape .grades .grade4, body .shape .grades .grade5 {
   padding: 2px;
   margin: auto;
-  margin-top: .4em;
-  margin-bottom: .4em;
   color: #959eac;
   background-color: #121c21;
-  height: 45px;
-  width: 45px;
+  height: 46px;
+  width: 47px;
   border-radius: 100px;
   text-align: center;
   padding: auto;
   vertical-align: middle;
+  font-size: 17px;
   line-height: 43px;
   cursor: pointer;
   -webkit-transition: background-color .7s, font-weight .7s;
