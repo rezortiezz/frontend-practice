@@ -1,0 +1,134 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+    .shape {
+        position: absolute;
+        top:0;
+        bottom: 10%;
+        left: 0;
+        right: 0;
+        height: 400px;
+        width: 375px;
+        border-radius: 10%;
+        background-color: hsl(213, 19%, 18%);
+        text-align: center;
+        margin: auto;
+
+        .attribution {
+            font-size: 75%;
+            color: hsl(217, 12%, 63%);
+        }
+
+        h1 {
+            padding-top: .4em;
+            
+        }
+
+        p {
+            padding-left: 1em;
+            padding-right: 1em;
+            color: hsl(217, 12%, 63%);
+            margin-bottom: 0;
+        }
+
+        button {
+            position: relative;
+            background-color: hsl(25, 97%, 53%);
+            border: none;
+            color: white;
+            width: 270px;
+            height: 43px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1em;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: background-color 0.7s;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+
+        button:hover {
+            background-color: white;
+            color: hsl(25, 97%, 53%);
+        }
+
+        button:after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-radius: 4em;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 0.5s;
+            box-shadow: 0 0 10px 40px white;
+        }
+
+        button:active:after {
+            box-shadow: 0 0 0 0 white;
+            position: absolute;
+            border-radius: 4em;
+            left: 0;
+            top:0;
+            opacity: 1;
+            transition: 0s;
+        }
+          
+        button:active {
+            top: 1px;
+        }
+
+        .grades {
+            display: flex;
+            position: relative;
+            margin-top: .5em;
+            
+            .grade1, .grade2, .grade3, .grade4, .grade5 {
+                
+                margin: auto;
+                margin-top: .4em;
+                margin-bottom: .4em;
+                color: hsl(217, 12%, 63%);
+                background-color: hsl(199, 31%, 10%);
+                height: 45px;
+                width: 45px;
+                border-radius: 100px;
+                text-align: center;
+                padding: 0px;
+                vertical-align: middle;
+                line-height: 43px;
+                cursor: pointer;
+                transition: background-color .7s, font-weight .7s;
+            }
+
+            .grade1:hover, .grade2:hover, .grade3:hover, .grade4:hover, .grade5:hover
+            {
+                background-color:hsl(217, 12%, 63%);
+                color: white;
+                font-weight: 700;
+            }
+            .grade1:focus, .grade2:focus, .grade3:focus, .grade4:focus,.grade5:focus {
+                background-color: hsl(25, 97%, 53%);
+                color: white;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+::selection {
+    color:hsl(25, 97%, 53%);
+    background-color: white;
+}
+
